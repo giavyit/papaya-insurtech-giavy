@@ -42,3 +42,13 @@ jobs:
 
       - name: Run unit & integration tests
         run: npm run test
+
+  deploy:
+    needs: build-and-test
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Deployment (Render)
+        run: |
+          curl -f "${{ secrets.RENDER_DEPLOY_HOOK_URL }}"
+
