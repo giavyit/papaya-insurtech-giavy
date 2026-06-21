@@ -13,6 +13,27 @@ Ký ức đầu tiên của tôi mà tôi có thể truy xuất được từ b�
 
 Lần cuối tôi bỏ quên cái đồ là cái thẻ nhân viên của tôi. Tôi thuê ở 1 căn hộ chung cư vào thời điểm 1 buổi sáng đi làm trong tuần, tôi vẫn đi làm như mọi ngày ví tiền chìa khóa xe tôi có đủ, tôi bấm thang máy và xuống hầm gửi xe lấy xe đi làm như bao ngày. Nhưng hôm đó khi tới công ty thì tôi phát hiện là mình đã quên chiếc thẻ nhân viên, vì vậy tôi phải đi đăng ký và mượn thẻ tạm để có thể vào cổng. Kết quả là phải mất thời gian ghi thông tin và chờ đợi lấy thẻ tạm. Thật ra, tôi cũng đã quên nhiều lần rồi vì hay bỏ thẻ nhân viên 1 nơi balo 1 nơi, lúc đi thì cầm balo lên và đi thôi. Cũng trong ngày hôm đó, khi chiều đi làm về tôi đã nghĩ ra 1 cách để không còn quên thẻ nhân viên nữa đó là tôi đã treo cái thẻ nhân viên của mình chung với cái chìa khóa xe của mình, cách thức này nó khả dụng bởi vì nó theo luồng các thao tác chuẩn bị trước khi đi làm của tôi là mặc áo khoác => đeo balo => lấy điện thoại => lấy ví => lấy chìa khóa xe lúc này thẻ nhân viên của tôi cũng trước mặt tôi nên tôi sẽ dễ dàng nhớ tới nó => mang giày => đeo khẩu trang => mở cửa => đóng cửa.
 
+### Q12 — Viết hướng dẫn đổ xăng tại cây xăng nhanh nhất có thể
+> Bạn hãy viết hướng dẫn (guideline) cho cách đổ xăng ở cây xăng tốn ít thời gian nhất. Tình huống giả lập là xe đang cần thêm xăng. Bạn có thể chọn bất kỳ phương tiện xăng nào mà bạn thích.
+
+- Bố cục cây xăng giả định: Cây xăng đô thị tiêu chuẩn (4 làn, có phân làn riêng cho ô tô/xe máy).
+- Bối cảnh: Giờ tan tầm (cao điểm), bình xăng còn dưới 10% (vạch đỏ), ưu tiên tốc độ tuyệt đối nhưng không vi phạm an toàn. Tôi đi xe tay ga Air Blade 2014 màu đỏ đen.
+- Điểm nghẽn: vị trí thì ở đây sẽ là chọn sai làn không vào gần chỗ nhân viên cây xăng làn hoặc đậu ngược hướng nắp bình xăng. Nghẽn giao tiếp và thanh toán là chờ nhân viên thối tiền, mã QR thì ở xa chỗ đậu xe. Nghẽn thao tác thì tắt máy, mở cốp, vẵn nắp xăng, móc tiền từ trong bóp ra, kiếm tiền trả.
+
+Hướng dẫn thực thi (Guideline)
+
+**Bước 1:** Tiếp cận & Định vị
+- Quan sát từ xa để chọn Làn ngoài cùng bên phải. Vì đối với xe Air Blade (nắp bình xăng ở sườn trước), việc tiếp cận cột bơm từ bên phải giúp tay phải của bạn tự do thao tác mở nắp, trong khi nhân viên đứng bên trái có thể thọc vòi bơm vào ngay lập tức mà không bị vướng mình. Ưu tiên chọn làn có xe tay ga vì đa số xe số cần phải dựng xe mở yên để đổ xăng.
+  
+**Bước 2:** Chuẩn bị động tác
+- Khi còn cách cột bơm 1 xe thì thò tay mở sẵn nắp bảo vệ bình xăng (bấm nút Fuel trên xe), rút sẵn tiền mặt (tờ 50.000đ hoặc 100.000đ tùy dung tích bình) để ở hộc để đồ phía trước hoặc cầm sẵn trên tay.
+  
+**Bước 3:** Tiếp cận Cột & Ra lệnh
+- Tiến xe vào sát cột bơm, tắt máy (quy định an toàn), vặn mở nắp bình xăng bằng tay thuận. Đọc to, rõ ràng số tiền cần đổ, đồng thời ngay lập tức đưa tiền mặt ra trước mặt nhân viên.
+  
+**Bước 4:** Bơm & Rút lui
+- Trong lúc vòi đang bơm, tay thuận cầm sẵn nắp bình xăng. Ngay khi nhân viên vừa rút vòi xoay nắp đóng lại ngay lập tức. Sau đó dắt bộ xe thẳng tiến về phía trước ra khỏi khu vực cột bơm khoảng 5m để nhường cho xe đằng sau rồi mới đề máy chạy tiếp
+
 ### Q16 — Bia trước hay nước đá trước? · `[O, Cu]`
 
 > Bia trước hay nước đá trước?
