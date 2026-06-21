@@ -1,0 +1,57 @@
+[
+  {
+    "id": "d3b07384-d113-4ec6-a558-4cbb3035418b",
+    "state": "SUBMITTED",
+    "createdAt": "2026-06-20T08:00:00.000Z",
+    "updatedAt": "2026-06-20T08:00:00.000Z",
+    "data": {
+      "amount": 1200,
+      "policyLimit": 5000
+    },
+    "infoRequestCount": 0
+  },
+  {
+    "id": "8f070129-450f-4f27-84bc-87c2f0f423ab",
+    "state": "UNDER_ASSESSMENT",
+    "createdAt": "2026-06-19T09:30:00.000Z",
+    "updatedAt": "2026-06-19T10:15:00.000Z",
+    "data": {
+      "amount": 3500,
+      "policyLimit": 10000,
+      "documentsPresent": true,
+      "assessorId": "assessor-john"
+    },
+    "infoRequestCount": 0
+  },
+  {
+    "id": "c0f993d0-0863-4903-b0fc-1b4e13589b2b",
+    "state": "APPROVED",
+    "createdAt": "2026-06-18T14:00:00.000Z",
+    "updatedAt": "2026-06-18T16:45:00.000Z",
+    "data": {
+      "amount": 4500,
+      "policyLimit": 5000,
+      "documentsPresent": true,
+      "assessorId": "assessor-mary",
+      "assessmentReportComplete": true
+    },
+    "infoRequestCount": 0
+  },
+  {
+    "id": "e02d6a5a-8b83-4927-a068-07b9a528e12c",
+    "state": "CLOSED",
+    "createdAt": "2026-06-17T11:00:00.000Z",
+    "updatedAt": "2026-06-17T15:20:00.000Z",
+    "data": {
+      "amount": 8000,
+      "policyLimit": 10000,
+      "documentsPresent": true,
+      "assessorId": "assessor-mary",
+      "assessmentReportComplete": true,
+      "paymentRequestCreated": true,
+      "paymentConfirmed": true,
+      "paymentReference": "REF123456"
+    },
+    "infoRequestCount": 0
+  }
+]

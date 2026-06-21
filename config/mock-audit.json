@@ -1,0 +1,132 @@
+[
+  {
+    "id": "a5c7f8a9-450f-4f27-84bc-87c2f0f423ab",
+    "timestamp": "2026-06-19T09:45:00.000Z",
+    "claimId": "8f070129-450f-4f27-84bc-87c2f0f423ab",
+    "fromState": "SUBMITTED",
+    "toState": "DOCUMENTS_VERIFIED",
+    "triggeredBy": {
+      "userId": "user-document_clerk",
+      "role": "document_clerk"
+    },
+    "reason": "Transition to DOCUMENTS_VERIFIED",
+    "success": true
+  },
+  {
+    "id": "b6d8a9b0-450f-4f27-84bc-87c2f0f423ab",
+    "timestamp": "2026-06-19T10:15:00.000Z",
+    "claimId": "8f070129-450f-4f27-84bc-87c2f0f423ab",
+    "fromState": "DOCUMENTS_VERIFIED",
+    "toState": "UNDER_ASSESSMENT",
+    "triggeredBy": {
+      "userId": "user-team_lead",
+      "role": "team_lead"
+    },
+    "reason": "Transition to UNDER_ASSESSMENT",
+    "success": true
+  },
+  {
+    "id": "c7e9b0c1-0863-4903-b0fc-1b4e13589b2b",
+    "timestamp": "2026-06-18T14:30:00.000Z",
+    "claimId": "c0f993d0-0863-4903-b0fc-1b4e13589b2b",
+    "fromState": "SUBMITTED",
+    "toState": "DOCUMENTS_VERIFIED",
+    "triggeredBy": {
+      "userId": "user-document_clerk",
+      "role": "document_clerk"
+    },
+    "reason": "Transition to DOCUMENTS_VERIFIED",
+    "success": true
+  },
+  {
+    "id": "d8f0c1d2-0863-4903-b0fc-1b4e13589b2b",
+    "timestamp": "2026-06-18T15:00:00.000Z",
+    "claimId": "c0f993d0-0863-4903-b0fc-1b4e13589b2b",
+    "fromState": "DOCUMENTS_VERIFIED",
+    "toState": "UNDER_ASSESSMENT",
+    "triggeredBy": {
+      "userId": "user-team_lead",
+      "role": "team_lead"
+    },
+    "reason": "Transition to UNDER_ASSESSMENT",
+    "success": true
+  },
+  {
+    "id": "e9a1d2e3-0863-4903-b0fc-1b4e13589b2b",
+    "timestamp": "2026-06-18T16:45:00.000Z",
+    "claimId": "c0f993d0-0863-4903-b0fc-1b4e13589b2b",
+    "fromState": "UNDER_ASSESSMENT",
+    "toState": "APPROVED",
+    "triggeredBy": {
+      "userId": "user-assessor",
+      "role": "assessor"
+    },
+    "reason": "Transition to APPROVED",
+    "success": true
+  },
+  {
+    "id": "f0b2e3f4-8b83-4927-a068-07b9a528e12c",
+    "timestamp": "2026-06-17T11:30:00.000Z",
+    "claimId": "e02d6a5a-8b83-4927-a068-07b9a528e12c",
+    "fromState": "SUBMITTED",
+    "toState": "DOCUMENTS_VERIFIED",
+    "triggeredBy": {
+      "userId": "user-document_clerk",
+      "role": "document_clerk"
+    },
+    "reason": "Transition to DOCUMENTS_VERIFIED",
+    "success": true
+  },
+  {
+    "id": "a1c3f4a5-8b83-4927-a068-07b9a528e12c",
+    "timestamp": "2026-06-17T12:00:00.000Z",
+    "claimId": "e02d6a5a-8b83-4927-a068-07b9a528e12c",
+    "fromState": "DOCUMENTS_VERIFIED",
+    "toState": "UNDER_ASSESSMENT",
+    "triggeredBy": {
+      "userId": "user-team_lead",
+      "role": "team_lead"
+    },
+    "reason": "Transition to UNDER_ASSESSMENT",
+    "success": true
+  },
+  {
+    "id": "b2d4a5b6-8b83-4927-a068-07b9a528e12c",
+    "timestamp": "2026-06-17T13:30:00.000Z",
+    "claimId": "e02d6a5a-8b83-4927-a068-07b9a528e12c",
+    "fromState": "UNDER_ASSESSMENT",
+    "toState": "APPROVED",
+    "triggeredBy": {
+      "userId": "user-assessor",
+      "role": "assessor"
+    },
+    "reason": "Transition to APPROVED",
+    "success": true
+  },
+  {
+    "id": "c3e5b6c7-8b83-4927-a068-07b9a528e12c",
+    "timestamp": "2026-06-17T14:45:00.000Z",
+    "claimId": "e02d6a5a-8b83-4927-a068-07b9a528e12c",
+    "fromState": "APPROVED",
+    "toState": "PAYMENT_INITIATED",
+    "triggeredBy": {
+      "userId": "user-finance",
+      "role": "finance"
+    },
+    "reason": "Transition to PAYMENT_INITIATED",
+    "success": true
+  },
+  {
+    "id": "d4f6c7d8-8b83-4927-a068-07b9a528e12c",
+    "timestamp": "2026-06-17T15:20:00.000Z",
+    "claimId": "e02d6a5a-8b83-4927-a068-07b9a528e12c",
+    "fromState": "PAYMENT_INITIATED",
+    "toState": "CLOSED",
+    "triggeredBy": {
+      "userId": "user-finance",
+      "role": "finance"
+    },
+    "reason": "Transition to CLOSED",
+    "success": true
+  }
+]

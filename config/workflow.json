@@ -1,0 +1,98 @@
+{
+  "states": {
+    "SUBMITTED": {
+      "description": "Claim received, awaiting document verification"
+    },
+    "DOCUMENTS_VERIFIED": {
+      "description": "All required documents confirmed present and valid"
+    },
+    "UNDER_ASSESSMENT": {
+      "description": "Assessor is reviewing the claim"
+    },
+    "PENDING_INFO": {
+      "description": "Additional information requested from member"
+    },
+    "APPROVED": {
+      "description": "Claim approved for payment"
+    },
+    "REJECTED": {
+      "description": "Claim denied"
+    },
+    "PAYMENT_INITIATED": {
+      "description": "Payment processing started"
+    },
+    "CLOSED": {
+      "description": "Claim lifecycle complete"
+    }
+  },
+  "transitions": [
+    {
+      "from": "SUBMITTED",
+      "to": "DOCUMENTS_VERIFIED",
+      "preconditions": ["all_documents_present"],
+      "sideEffects": ["notify_assessor_team"],
+      "authorizedRoles": ["document_clerk"]
+    },
+    {
+      "from": "DOCUMENTS_VERIFIED",
+      "to": "UNDER_ASSESSMENT",
+      "preconditions": ["assessor_assigned"],
+      "sideEffects": ["log_assessment_start_time"],
+      "authorizedRoles": ["team_lead"]
+    },
+    {
+      "from": "UNDER_ASSESSMENT",
+      "to": "APPROVED",
+      "preconditions": ["assessment_report_complete", "amount_within_policy_limit"],
+      "sideEffects": ["notify_member_approved", "create_payment_request"],
+      "authorizedRoles": ["assessor"]
+    },
+    {
+      "from": "UNDER_ASSESSMENT",
+      "to": "REJECTED",
+      "preconditions": ["assessment_report_complete", "rejection_reason_provided"],
+      "sideEffects": ["notify_member_rejected"],
+      "authorizedRoles": ["assessor"]
+    },
+    {
+      "from": "UNDER_ASSESSMENT",
+      "to": "PENDING_INFO",
+      "preconditions": ["missing_info_description_provided"],
+      "sideEffects": ["notify_member_info_request"],
+      "authorizedRoles": ["assessor"]
+    },
+    {
+      "from": "PENDING_INFO",
+      "to": "DOCUMENTS_VERIFIED",
+      "preconditions": ["new_documents_received"],
+      "sideEffects": ["reset_assessment_timer"],
+      "authorizedRoles": ["document_clerk"]
+    },
+    {
+      "from": "APPROVED",
+      "to": "PAYMENT_INITIATED",
+      "preconditions": ["payment_request_created"],
+      "sideEffects": ["trigger_payment_system"],
+      "authorizedRoles": ["finance"]
+    },
+    {
+      "from": "PAYMENT_INITIATED",
+      "to": "CLOSED",
+      "preconditions": ["payment_confirmed"],
+      "sideEffects": ["notify_member_payment_reference"],
+      "authorizedRoles": ["finance"]
+    },
+    {
+      "from": "REJECTED",
+      "to": "CLOSED",
+      "preconditions": ["appeal_period_expired_or_acknowledged"],
+      "sideEffects": ["archive_claim"],
+      "authorizedRoles": ["system"]
+    }
+  ],
+  "cycleDetection": {
+    "monitoredPath": ["UNDER_ASSESSMENT", "PENDING_INFO", "DOCUMENTS_VERIFIED", "UNDER_ASSESSMENT"],
+    "maxCycles": 3,
+    "errorMessage": "Maximum information requests exceeded — escalate to team lead"
+  }
+}
